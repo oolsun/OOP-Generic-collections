@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace OOP_Generic_collections
 {
+    // Olov Olsson Sundqvist .NET23
     internal class Program
     {
         static void Main(string[] args)
