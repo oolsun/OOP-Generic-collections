@@ -117,7 +117,7 @@ namespace OOP_Generic_collections
             Console.WriteLine("********************************");
 
             Console.WriteLine("--------------------------------");
-            Console.WriteLine("See if no3 is in stack");
+            Console.WriteLine("See if Employee E3 is in stack");
             Console.WriteLine("--------------------------------");
             // See if stack contains object E3. If it does, print "Stack contains E3". Else print "Stack does not contains E3".
             if (employeeStack.Contains(E3))
@@ -142,7 +142,7 @@ namespace OOP_Generic_collections
             employeeList.Add(E5);
 
             Console.WriteLine("--------------------------------");
-            Console.WriteLine("See if no1 is in list");
+            Console.WriteLine("See if Employee E1 is in list");
             Console.WriteLine("--------------------------------");
             // See if object E1 is in list. If it does, print "E1 is in list" else print "E1 is not in list"
             if (employeeList.Contains(E1))
