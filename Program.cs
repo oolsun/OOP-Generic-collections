@@ -52,8 +52,10 @@ namespace OOP_Generic_collections
             Console.WriteLine("********************************");
             Console.WriteLine("          Part 1 STACK");
             Console.WriteLine("********************************\n");
-            // Create stack
+
+            // Create stack.
             Stack<Employee> employeeStack = new Stack<Employee>();
+
             // Add objects to stack using Push.
             employeeStack.Push(E1);
             employeeStack.Push(E2);
@@ -64,6 +66,7 @@ namespace OOP_Generic_collections
             Console.WriteLine("--------------------------------");
             Console.WriteLine("Print all objects in stack");
             Console.WriteLine("--------------------------------");
+
             // Print all objects in stack.
             foreach (Employee employee in employeeStack)
             {
@@ -75,6 +78,7 @@ namespace OOP_Generic_collections
             Console.WriteLine("--------------------------------");
             Console.WriteLine("Retrieve using Pop Method");
             Console.WriteLine("--------------------------------");
+
             // Print and delete objects from stack using Pop.
             Employee poppedEmployee1 = employeeStack.Pop();      
             Console.WriteLine("ID: " + poppedEmployee1.ID + "\nNamn: " + poppedEmployee1.Name + "\nKön: " + poppedEmployee1.Gender + "\nLön: " + poppedEmployee1.Salary);
@@ -96,6 +100,7 @@ namespace OOP_Generic_collections
             Console.WriteLine("ID: " + poppedEmployee5.ID + "\nNamn: " + poppedEmployee5.Name + "\nKön: " + poppedEmployee5.Gender + "\nLön: " + poppedEmployee5.Salary);
             Console.WriteLine("Objekt kvar i stacken: " + employeeStack.Count);
             Console.WriteLine("********************************");
+
             // Add objects to stack again.
             employeeStack.Push(E1);
             employeeStack.Push(E2);
@@ -106,6 +111,7 @@ namespace OOP_Generic_collections
             Console.WriteLine("--------------------------------");
             Console.WriteLine("Retrieve using Peek Method");
             Console.WriteLine("--------------------------------");
+
             // Peek and print two objects in stack (peek only shows the top object in the stack without removing so output will be the same on both).
             Employee peekE2 = employeeStack.Peek();
             Console.WriteLine("ID: " + peekE2.ID + "\nNamn: " + peekE2.Name + "\nKön: " + peekE2.Gender + "\nLön: " + peekE2.Salary);
@@ -119,6 +125,7 @@ namespace OOP_Generic_collections
             Console.WriteLine("--------------------------------");
             Console.WriteLine("See if Employee E3 is in stack");
             Console.WriteLine("--------------------------------");
+
             // See if stack contains object E3. If it does, print "Stack contains E3". Else print "Stack does not contains E3".
             if (employeeStack.Contains(E3))
             {
@@ -128,13 +135,16 @@ namespace OOP_Generic_collections
             {
                 Console.WriteLine("Stacken innehåller inte E3");
             }
+
             // Part 2 of assignment. List.
             Console.WriteLine("\n********************************");
             Console.WriteLine("          Part 2  LIST");
             Console.WriteLine("********************************\n");
-            // Create a new list
+
+            // Create a new list.
             var employeeList = new List<Employee>();
-            // Add object to list
+
+            // Add object to list.
             employeeList.Add(E1);
             employeeList.Add(E2);
             employeeList.Add(E3);
@@ -144,7 +154,8 @@ namespace OOP_Generic_collections
             Console.WriteLine("--------------------------------");
             Console.WriteLine("See if Employee E1 is in list");
             Console.WriteLine("--------------------------------");
-            // See if object E1 is in list. If it does, print "E1 is in list" else print "E1 is not in list"
+
+            // See if object E1 is in list. If it does, print "E1 is in list" else print "E1 is not in list".
             if (employeeList.Contains(E1))
             {
                 Console.WriteLine("E1 finns i listan");
@@ -153,21 +164,25 @@ namespace OOP_Generic_collections
             {
                 Console.WriteLine("E1 finns inte i listan");
             }
+
             // Find method to find the first Male in list.
             var firstMale = employeeList.Find(x => x.Gender == "Male");
+
             // Print the first male in list.
             Console.WriteLine("\n--------------------------------");
             Console.WriteLine("First male in list");
             Console.WriteLine("--------------------------------");
             Console.WriteLine("ID: " + firstMale.ID + "\nNamn: " + firstMale.Name + "\nKön: " + firstMale.Gender + "\nLön: " + firstMale.Salary);
+
             // FindAll to find all males in list.
-            var allMale = employeeList.FindAll(x => x.Gender == "Male");
+            var allMales = employeeList.FindAll(x => x.Gender == "Male");
 
             Console.WriteLine("\n--------------------------------");
             Console.WriteLine("All males in list");
             Console.WriteLine("--------------------------------");
+
             // Print all males in list.
-            foreach (var male in allMale)
+            foreach (var male in allMales)
             {
                 Console.WriteLine("ID: " + male.ID + "\nNamn: " + male.Name + "\nKön: " + male.Gender + "\nLön: " + male.Salary);
                 Console.WriteLine("********************************");
