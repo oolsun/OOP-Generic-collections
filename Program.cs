@@ -76,24 +76,24 @@ namespace OOP_Generic_collections
             Console.WriteLine("Retrieve using Pop Method");
             Console.WriteLine("--------------------------------");
             // Print and delete objects from stack using Pop.
-            Employee stackE1 = employeeStack.Pop();      
-            Console.WriteLine("ID: " + stackE1.ID + "\nNamn: " + stackE1.Name + "\nKön: " + stackE1.Gender + "\nLön: " + stackE1.Salary);
+            Employee poppedEmployee1 = employeeStack.Pop();      
+            Console.WriteLine("ID: " + poppedEmployee1.ID + "\nNamn: " + poppedEmployee1.Name + "\nKön: " + poppedEmployee1.Gender + "\nLön: " + poppedEmployee1.Salary);
             Console.WriteLine("Objekt kvar i stacken: " + employeeStack.Count);
             Console.WriteLine("********************************");
-            Employee stackE2 = employeeStack.Pop();
-            Console.WriteLine("ID: " + stackE2.ID + "\nNamn: " + stackE2.Name + "\nKön: " + stackE2.Gender + "\nLön: " + stackE2.Salary);
+            Employee poppedEmployee2 = employeeStack.Pop();
+            Console.WriteLine("ID: " + poppedEmployee2.ID + "\nNamn: " + poppedEmployee2.Name + "\nKön: " + poppedEmployee2.Gender + "\nLön: " + poppedEmployee2.Salary);
             Console.WriteLine("Objekt kvar i stacken: " + employeeStack.Count);
             Console.WriteLine("********************************");
-            Employee stackE3 = employeeStack.Pop();
-            Console.WriteLine("ID: " + stackE3.ID + "\nNamn: " + stackE3.Name + "\nKön: " + stackE3.Gender + "\nLön: " + stackE3.Salary);
+            Employee poppedEmployee3 = employeeStack.Pop();
+            Console.WriteLine("ID: " + poppedEmployee3.ID + "\nNamn: " + poppedEmployee3.Name + "\nKön: " + poppedEmployee3.Gender + "\nLön: " + poppedEmployee3.Salary);
             Console.WriteLine("Objekt kvar i stacken: " + employeeStack.Count);
             Console.WriteLine("********************************");
-            Employee stackE4 = employeeStack.Pop();
-            Console.WriteLine("ID: " + stackE4.ID + "\nNamn: " + stackE4.Name + "\nKön: " + stackE4.Gender + "\nLön: " + stackE4.Salary);
+            Employee poppedEmployee4 = employeeStack.Pop();
+            Console.WriteLine("ID: " + poppedEmployee4.ID + "\nNamn: " + poppedEmployee4.Name + "\nKön: " + poppedEmployee4.Gender + "\nLön: " + poppedEmployee4.Salary);
             Console.WriteLine("Objekt kvar i stacken: " + employeeStack.Count);
             Console.WriteLine("********************************");
-            Employee stackE5 = employeeStack.Pop();
-            Console.WriteLine("ID: " + stackE5.ID + "\nNamn: " + stackE5.Name + "\nKön: " + stackE5.Gender + "\nLön: " + stackE5.Salary);
+            Employee poppedEmployee5 = employeeStack.Pop();
+            Console.WriteLine("ID: " + poppedEmployee5.ID + "\nNamn: " + poppedEmployee5.Name + "\nKön: " + poppedEmployee5.Gender + "\nLön: " + poppedEmployee5.Salary);
             Console.WriteLine("Objekt kvar i stacken: " + employeeStack.Count);
             Console.WriteLine("********************************");
             // Add objects to stack again.
