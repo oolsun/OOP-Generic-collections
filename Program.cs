@@ -48,6 +48,7 @@ namespace OOP_Generic_collections
                 Gender = "Female",
                 Salary = 47000
             };
+
             // Part 1 of assignment. Stack.
             Console.WriteLine("********************************");
             Console.WriteLine("          Part 1 STACK");
